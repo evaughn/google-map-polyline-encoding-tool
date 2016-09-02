@@ -157,7 +157,7 @@ class Polyline
      *
      * @return array pairs
      */
-    final public static function pair( $list )
+    final public static function googlepair( $list )
     {
         return is_array($list) ? array_chunk(array_reverse($list), 2) : array();
     }
