@@ -149,4 +149,16 @@ class Polyline
     {
         return is_array($list) ? array_chunk($list, 2) : array();
     }
+    
+    /**
+     * Concat list into pairs of points for Google coordinates
+     *
+     * @param array $list One-dimensional array to segment into list of tuples.
+     *
+     * @return array pairs
+     */
+    final public static function pair( $list )
+    {
+        return is_array($list) ? array_chunk(array_reverse($list), 2) : array();
+    }
 }
